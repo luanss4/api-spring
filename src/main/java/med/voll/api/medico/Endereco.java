@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.DadosEndereco;
 
+import java.util.Optional;
+
 @Embeddable
 @Data
 @NoArgsConstructor
@@ -25,5 +27,15 @@ public class Endereco {
         this.complemento = endereco.complemento();
         this.cidade = endereco.cidade();
         this.uf = endereco.uf();
+    }
+
+    public void atualizaInformacoes(DadosEndereco dadosEndereco) {
+        Optional.ofNullable(dadosEndereco.logradouro()).ifPresent(this::setLogradouro);
+        Optional.ofNullable(dadosEndereco.bairro()).ifPresent(this::setBairro);
+        Optional.ofNullable(dadosEndereco.cep()).ifPresent(this::setCep);
+        Optional.ofNullable(dadosEndereco.numero()).ifPresent(this::setNumero);
+        Optional.ofNullable(dadosEndereco.complemento()).ifPresent(this::setComplemento);
+        Optional.ofNullable(dadosEndereco.cidade()).ifPresent(this::setCidade);
+        Optional.ofNullable(dadosEndereco.uf()).ifPresent(this::setUf);
     }
 }
