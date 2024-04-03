@@ -21,3 +21,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [0.1.0] - 2023-02-01
 ### Added
 - Primeira versão do projeto
+- Funcionalidade de integração continua adicionada CI/CD
