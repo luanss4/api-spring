@@ -34,3 +34,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Adicao das secrets para login no docker hub
 - Ajustes para a subida da imagem para o docker hub
 - Retirada da tag #spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+- Retirada da tag #spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfigurationnnn
