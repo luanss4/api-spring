@@ -29,3 +29,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Ajuste no arquivo CHANGELOG.md
 - Ajuste no arquivo CHANGELOG.md para testar a verificação do changelog
 - Teste update changelog
+- Teste update changelog
