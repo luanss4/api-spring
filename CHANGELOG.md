@@ -32,3 +32,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Teste update changelog
 - Alteração do nome do arquivo maven.yml para build.yml
 - Adicao das secrets para login no docker hub
+- Ajustes para a subida da imagem para o docker hub
