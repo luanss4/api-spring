@@ -25,6 +25,14 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
+      - name: Check if CHANGELOG.md was updated
+        run: |
+          if git diff --name-only origin/main..HEAD -- | grep 'CHANGELOG.md'; then
+            echo "CHANGELOG.md was updated."
+          else
+            echo "CHANGELOG.md was not updated. Please update it before merging." && exit 1
+          fi
+
       - name: Set up JDK 17
         uses: actions/setup-java@v2
         with:
