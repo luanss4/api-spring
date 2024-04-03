@@ -22,7 +22,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-repo-name:latest
+          tags: luanss4/api-spring:latest
 
       - name: Deploy to cloud
         run: |
