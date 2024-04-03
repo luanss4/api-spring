@@ -28,3 +28,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Ajuste para checkar o changelog apenas no push e não no merge request
 - Ajuste no arquivo CHANGELOG.md
 - Ajuste no arquivo CHANGELOG.md para testar a verificação do changelog
+- Teste update changelog
