@@ -36,3 +36,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Retirada da tag #spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 - Retirada da tag #spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfigurationnnn
 - ajuste change log
+- Remocao do arquivo de deploy o passo de deploy foi adicionado no arquivo build.yml
