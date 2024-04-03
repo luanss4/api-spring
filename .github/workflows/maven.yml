@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -30,10 +30,12 @@ jobs:
 
       - name: Check if CHANGELOG.md was updated
         run: |
-          if git diff --name-only origin/main..HEAD -- | grep 'CHANGELOG.md'; then
-            echo "CHANGELOG.md was updated."
-          else
-            echo "CHANGELOG.md was not updated. Please update it before merging." && exit 1
+          if [ "${{ github.event_name }}" = "push" ]; then
+            if git diff --name-only origin/main..HEAD -- | grep 'CHANGELOG.md'; then
+              echo "CHANGELOG.md was updated."
+            else
+              echo "CHANGELOG.md was not updated. Please update it before merging." && exit 1
+            fi
           fi
 
       - name: Set up JDK 17
