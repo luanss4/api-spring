@@ -23,6 +23,8 @@ jobs:
           context: .
           push: true
           tags: luanss4/api-spring:latest
+          build-args:
+            - SPRING_PROFILES_ACTIVE=docker
 
       - name: Deploy to cloud
         run: |
