@@ -23,3 +23,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Primeira versão do projeto
 - Funcionalidade de integração continua adicionada CI/CD
 - Atualização do arquivo maven.yml do github actions
+- Ajuste na verificação do arquivo CHANGELOG.md
