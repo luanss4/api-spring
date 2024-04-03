@@ -1,18 +1,6 @@
-name: Build and Deploy
+name: build and deploy
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
-    inputs:
-      branch:
-        description: 'Branch to deploy'
-        required: true
-        default: 'main'
+on: [push, pull_request]
 
 jobs:
   build:
@@ -36,8 +24,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.inputs.branch }}
 
       - name: Fetch all branches
         run: git fetch --all
