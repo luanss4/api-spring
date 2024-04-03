@@ -25,3 +25,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - Atualização do arquivo maven.yml do github actions
 - Ajuste na verificação do arquivo CHANGELOG.md
 - Ajuste no arquivo README.md
+- Ajuste para checkar o changelog apenas no push e não no merge request
