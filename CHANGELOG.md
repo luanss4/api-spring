@@ -38,3 +38,4 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 - ajuste change log
 - Remocao do arquivo de deploy o passo de deploy foi adicionado no arquivo build.yml
 - - Remocao do arquivo de deploy o passo de deploy foi adicionado no arquivo build.ymlmm
+  - Adicao do spring security
